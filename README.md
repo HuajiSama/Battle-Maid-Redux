@@ -1,3 +1,8 @@
+
+This is a re-translated fork of the previous machine-translated verison. Almost everything has been gone over by a human editor so should have (mostly) correct grammar and phrasing. I hope. Original Readme below:
+
+
+
 # Battle Maid Redux
 
 This is an attempted translation of the Battle Maid mod for C:DDA with some minor nerfs to the martial arts.
