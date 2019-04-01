@@ -21,13 +21,9 @@
        "armor_cut":30,
        "vision_day":8,
        "vision_night":8,
-       "death_drops": {
-        "subtype": "collection",
-        "groups": [
-            [ "shoggoth_maid_drop", 100 ]
-        ]
-    },
+       "death_drops": "mon_shoggoth_maid_death_drops",
        "hp":400,
+       "harvest": "exempt",
        "death_function":["MELT"],
        "special_attacks":[["PARROT", 40],["IMPALE", 25], ["STRETCH_ATTACK", 5]],
        "description":"A shoggoth mimicking the look of an attractive maid. Contrary to the neat appearance, her head has swirls of pink and iridescent colors swirling around. She has a deep seated love for her master.",
@@ -38,12 +34,7 @@
     "type" : "MONSTER",
     "id" : "mon_shoggoth",
     "copy-from" : "mon_shoggoth",
-    "death_drops": {
-        "subtype": "collection",
-        "groups": [
-            [ "shoggoth_drop", 100 ]
-        ]
-     }
+    "death_drops": "mon_shoggoth_death_drops"
     },
     {
     "type" : "MONSTER",
@@ -69,6 +60,7 @@
     "armor_cut":0,
     "vision_day":30,
     "vision_night":3,
+    "harvest": "human",
     "death_function":["NORMAL"],
     "hp":40,
     "description":"A child entrusted to you by the owner of the house you served at. There's a deep feeling of fear in your stomach as you embrace the cataclysm, but protecting this child gives you purpose and makes you feel less alone.",
@@ -97,12 +89,8 @@
        "armor_cut":10,
        "vision_day":8,
        "vision_night":8,
-       "death_drops": {
-        "subtype": "collection",
-        "groups": [
-            [ "little_maid_drop", 100 ]
-        ]
-    },
+       "harvest": "exempt",
+       "death_drops": "mon_little_maid_death_drops",
        "hp":80,
        "death_function":["MELT"],
        "special_attacks":[["PARROT", 40],["IMPALE", 25]],
@@ -135,6 +123,7 @@
     "vision_night":15,
     "hp":100,
     "emit_fields": [ "emit_toxic_leak" ],
+    "harvest": "exempt",
     "death_function":["GAS", "ACID"],
     "special_attacks":[["ACID_BARF", 1]],
     "description":"A large living mass of meat made alive by the means of alchemy. The twisted, distorted meat lump has a mouth-like organ like that of a human, where it constantly spews poisonous gas and acidic bodily fluids from, while making unpleasant sounds.",
