@@ -6,7 +6,7 @@
     "category": "CC_NONCRAFT",
     "subcategory": "CSC_NONCRAFT",
     "difficulty": 0,
-    "time": 100,
+    "time": "0 m",
     "reversible": true,
     "autolearn": false,
     "components": [
@@ -21,7 +21,7 @@
     "category": "CC_NONCRAFT",
     "subcategory": "CSC_NONCRAFT",
     "difficulty": 0,
-    "time": 100,
+    "time": "0 m",
     "reversible": true,
     "autolearn": false,
     "components": [
@@ -36,7 +36,7 @@
     "category": "CC_NONCRAFT",
     "subcategory": "CSC_NONCRAFT",
     "difficulty": 0,
-    "time": 100,
+    "time": "0 m",
     "reversible": true,
     "autolearn": false,
     "components": [
