@@ -25,9 +25,11 @@
        "hp":400,
        "harvest": "exempt",
        "death_function":["MELT"],
+       "regenerates": 50,
+       "regen_morale": true,
        "special_attacks":[["PARROT", 40],["IMPALE", 25], ["STRETCH_ATTACK", 5]],
        "description":"A shoggoth mimicking the look of an attractive maid. Contrary to the neat appearance, her head has swirls of pink and iridescent colors swirling around. She has a deep seated love for her master.",
-       "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "PLASTIC", "SLUDGEPROOF", "ACIDPROOF", "NOHEAD", "REGENERATES_50", "REGEN_MORALE", "NOGIB", "FLIES"],
+       "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "PLASTIC", "SLUDGEPROOF", "ACIDPROOF", "NOHEAD", "NOGIB", "FLIES"],
        "anger_triggers":["FRIEND_ATTACKED"]
    },
    {
@@ -94,8 +96,10 @@
        "hp":80,
        "death_function":["MELT"],
        "special_attacks":[["PARROT", 40],["IMPALE", 25]],
+       "regenerates": 10,
+       "regen_morale": true,
        "description":"A small maid summoned from a different world. Although difficult to have a conversation with, it seems she had longed to be summoned.",
-       "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "WARM", "REGENERATES_10", "REGEN_MORALE", "NOGIB"],
+       "flags":["SEES", "SMELLS", "HEARS", "SWIMS", "WARM", "NOGIB"],
        "anger_triggers":["FRIEND_ATTACKED"]
    },
    {
