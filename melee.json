@@ -260,7 +260,7 @@
     "type": "GUN",
     "category" : "weapons",
     "symbol": "/",
-    "color": "dk_gray",
+    "color": "dark_gray",
     "name": "maid's claws",
     "description": "It is a sharp claw for fighting combat. Fit tightly to your arms, allows you to fight with unarmed techniques. When activated, it can launch fiery projectiles that burn as hot as your yearning for your master.",
     "price": 50000,
@@ -283,9 +283,9 @@
     "durability": 10,
     "clip_size": 40,
     "loudness" : 100,
+    "reload": 1,
     "ammo_effects": ["FLAME", "STREAM", "INCENDIARY", "NEVER_MISFIRES", "SHOT"],
-    "modes": [ [ "DEFAULT", "auto", 2 ] ],
-    "relative": { "reload": -99.0 }
+    "modes": [ [ "DEFAULT", "auto", 2 ] ]
 },
   {
     "id": "battle_mop",

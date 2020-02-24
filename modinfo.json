@@ -5,8 +5,6 @@
         "name": "Battle Maid Redux",
         "description": "Translated and tweaked version of the original Battle Maid mod.",
         "author": "Vermilion",
-		"dependencies": ["boats"],
-		"path": ""
-        
-		
-    }
+        "category": "creatures",
+        "dependencies": [ "dda" ]
+}
