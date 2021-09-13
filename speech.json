@@ -20,25 +20,25 @@
     {
         "type" : "speech",
         "speaker" : "mon_shoggoth_maid",
-        "sound" : "\"Tekeli, tekeli-li! Tekeli, tekeli-li! We'll have a lot of fun when you feel better!\"",
+        "sound" : "\"Tekeli, tekeli-li～♪ Tekeli, tekeli-li～♪ Oops, I end up humming when I'm in a good mood, don't I?\"",
         "volume" : 10
     },
     {
         "type" : "speech",
         "speaker" : "mon_shoggoth_maid",
-        "sound" : "\"Master! A-ah, my master's thing... tekeli-li! Kya!\"",
+        "sound" : "\"Master! U-um... I lo--tekeri-ri you! Kya! I actually said it!\"",
         "volume" : 10
     },
     {
         "type" : "speech",
         "speaker" : "mon_shoggoth_maid",
-        "sound" : "\"I am a maid♪ Your maid♪ Cleaning, washing, cooking... why didn't you let me continue?\"",
+        "sound" : "\"I am a maid♪ Your maid♪ Cleaning, washing, cooking... Huh, what was next again?\"",
         "volume" : 10
     },
     {
         "type" : "speech",
         "speaker" : "mon_shoggoth_maid",
-        "sound" : "\"I will continue talking as much as master desires! I will continue talking even if you don't want me to!\"",
+        "sound" : "\"If master desires it, I'll chat as much as you want! And even if you don't, I'll still keep chatting!\"",
         "volume" : 10
     },
     {
@@ -50,7 +50,7 @@
     {
         "type" : "speech",
         "speaker" : "mon_shoggoth_maid",
-        "sound" : "\"Master! Master! Are you going to play with the mi-gos?\"",
+        "sound" : "\"Master! Master! Are you going to play with the cornered mi-gos?\"",
         "volume" : 10
     },
     {
@@ -62,7 +62,7 @@
     {
         "type" : "speech",
         "speaker" : "mon_shoggoth_maid",
-        "sound" : "\"I learned that this form of human is the most suitable for service work! How is it? Why do you say it's inferior to my previous form?\"",
+        "sound" : "\"I discovered that, as subserviant race, this human form is most suitable for serving! How do you like it? Do you feel carnal desires rising up in you?\"",
         "volume" : 10
     },
     {
@@ -278,25 +278,25 @@
     {
         "type" : "speech",
         "speaker" : "mon_little_maid",
-        "sound" : "\"Master\"",
+        "sound" : "\"Master.\"",
         "volume" : 10
     },
     {
         "type" : "speech",
         "speaker" : "mon_little_maid",
-        "sound" : "\"Master~\"",
+        "sound" : "\"Masterrrrr\"",
         "volume" : 10
     },
     {
         "type" : "speech",
         "speaker" : "mon_little_maid",
-        "sound" : "\"Mashterr\"",
+        "sound" : "\"Mashterr?\"",
         "volume" : 10
     },
     {
         "type" : "speech",
         "speaker" : "mon_little_maid",
-        "sound" : "\"Master~~\"",
+        "sound" : "\"Master~♪\"",
         "volume" : 10
     },
     {
@@ -308,13 +308,13 @@
     {
         "type" : "speech",
         "speaker" : "mon_little_maid",
-        "sound" : "\"Master?\"",
+        "sound" : "\"Maaaster...\"",
         "volume" : 10
     },
     {
         "type" : "speech",
         "speaker" : "mon_little_maid",
-        "sound" : "\"Master♪\"",
+        "sound" : "\"Maaaster~~♪\"",
         "volume" : 10
     },
     {
