@@ -732,58 +732,59 @@
     ]
   ]
 },
-  {
-    "type" : "recipe",
-    "result": "blob_gohan",
-    "category": "CC_AMMO",
-    "subcategory": "CSC_AMMO_OTHER",
-    "skill_used": "cooking",
-    "difficulty": 0,
-    "time": "1 m",
-    "reversible": false,
-    "autolearn": true,
-    "qualities" : [
-      {"id":"HAMMER","level":1,"amount":1},
-      {"id":"CUT","level":1,"amount":1}
-    ],
-    "components": [
-      [
-        [ "meat", 1 ]
-      ]
+{
+  "type" : "recipe",
+  "result": "blob_gohan",
+  "category": "CC_AMMO",
+  "subcategory": "CSC_AMMO_OTHER",
+  "skill_used": "cooking",
+  "difficulty": 0,
+  "time": "1 m",
+  "reversible": false,
+  "autolearn": true,
+  "qualities" : [
+    {"id":"HAMMER","level":1,"amount":1},
+    {"id":"CUT","level":1,"amount":1}
+  ],
+  "components": [
+    [
+      [ "meat", 1 ]
     ]
-  },
-  {
- "type" : "recipe",
- "result": "flask_shoggoth",
- "category": "CC_OTHER",
- "skill_used": "cooking",
- "difficulty": 9,
- "time": "100 m",
- "reversible": false,
- "autolearn": false,
- "book_learn": [[ "book_shoggoth", 9 ]],
+  ]
+},
+{
+  "type" : "recipe",
+  "result": "flask_shoggoth",
+  "category": "CC_OTHER",
+  "subcategory": "CSC_OTHER_TOOLS",
+  "skill_used": "cooking",
+  "difficulty": 9,
+  "time": "100 m",
+  "reversible": false,
+  "autolearn": false,
+  "book_learn": [[ "book_shoggoth", 9 ]],
   "tools": [
     [
       [ "chemistry_set", 5 ]
     ]
   ],
- "components": [
-   [
-     [ "meat_shoggoth", 1 ]
-   ],
-   [
-     [ "flask_glass", 1 ]
-   ],
-   [
-     [ "blood", 10 ]
-   ],
-   [
-     [ "maid_point", 4454 ]
-   ],
-   [
-     [ "maid_dress", 1 ]
-   ]
- ]
+  "components": [
+    [
+      [ "meat_shoggoth", 1 ]
+    ],
+    [
+      [ "flask_glass", 1 ]
+    ],
+    [
+      [ "blood", 10 ]
+    ],
+    [
+      [ "maid_point", 4454 ]
+    ],
+    [
+      [ "maid_dress", 1 ]
+    ]
+  ]
 },
 {
        "type" : "recipe",
@@ -858,6 +859,7 @@
        "type" : "recipe",
  "result": "master_doll",
  "category": "CC_OTHER",
+ "subcategory": "CSC_OTHER_TOOLS",
  "skill_used": "fabrication",
  "skills_required": [ "tailor", 3 ],
  "difficulty": 3,
@@ -879,6 +881,7 @@
  "type" : "recipe",
  "result": "maid_bell",
  "category": "CC_OTHER",
+ "subcategory": "CSC_OTHER_TOOLS",
  "skill_used": "fabrication",
  "skills_required": [ "tailor", 3 ],
  "difficulty": 3,
@@ -904,6 +907,7 @@
        "type" : "recipe",
  "result": "master_doll_vibe_off",
  "category": "CC_OTHER",
+ "subcategory": "CSC_OTHER_TOOLS",
  "skill_used": "fabrication",
  "skills_required": [ "tailor", 3 ],
  "difficulty": 3,

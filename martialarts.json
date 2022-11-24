@@ -14,7 +14,9 @@
                 "description" : "By staying still, you get +2 to dodging.",
                 "unarmed_allowed" : true,
                 "melee_allowed" : true,
-                "flat_bonuses" : [["dodge", 2.0]]
+                "flat_bonuses" : [
+                    { "stat": "dodge", "scale": 2.0}
+                ]
             }
         ],
         "onmove_buffs": [
@@ -27,11 +29,11 @@
                 "min_unarmed" : 0,
                 "buff_duration" : 2,
                 "flat_bonuses" : [
-                    ["hit", "per", 1],
-                    ["damage", "bash", "per", 0.2],
-                    ["damage", "cut", "per", 0.2],
-                    ["damage", "stab", "per", 0.2],
-                    ["dodge", -4.0]
+                    { "stat": "hit", "scaling-stat": "per", "scale": 1},
+                    { "stat": "damage", "type": "bash", "scaling-stat": "per", "scale": 0.2},
+                    { "stat": "damage", "type": "cut", "scaling-stat": "per", "scale": 0.2},
+                    { "stat": "damage", "type": "stab", "scaling-stat": "per", "scale": 0.2},
+                    { "stat": "dodge", "scale": -4.0}
                 ]
             }
             ],
@@ -46,9 +48,9 @@
                 "buff_duration" : 2,
                 "max_stacks" : 1,
                 "mult_bonuses" : [
-                    ["damage", "bash", 1.2],
-                    ["damage", "cut", 1.2],
-                    ["damage", "stab", 1.2]
+                    { "stat": "damage", "type": "bash", "scale": 1.2 },
+                    { "stat": "damage", "type": "cut", "scale": 1.2 },
+                    { "stat": "damage", "type": "stab", "scale": 1.2 }
                 ]
             }
         ],

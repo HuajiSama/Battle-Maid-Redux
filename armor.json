@@ -133,6 +133,15 @@
         "flags" : ["VARSIZE", "SUPER_FANCY", "OVERSIZE"],
         "coverage" : 95,
         "material_thickness" : 4,
+        "pocket_data": [
+            {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "350 ml",
+                "max_contains_weight": "2 kg",
+                "max_item_length": "9 cm",
+                "moves": 80
+            }
+        ],
         "max_charges": 12,
         "ammo": "assassins_throwing_dagger"
     },
@@ -156,6 +165,15 @@
         "flags" : ["VARSIZE","HOOD","WATERPROOF","RAINPROOF","STURDY","SUPER_FANCY","OVERSIZE"],
         "coverage" : 100,
         "material_thickness" : 4,
+        "pocket_data": [
+            {
+                "pocket_type": "CONTAINER",
+                "max_contains_volume": "700 ml",
+                "max_contains_weight": "4 kg",
+                "max_item_length": "13 cm",
+                "moves": 80
+            }
+        ],
         "max_charges": 12,
         "ammo": "assassins_throwing_dagger"
     },
