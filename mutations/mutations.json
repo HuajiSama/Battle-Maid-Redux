@@ -292,7 +292,12 @@
     "purifiable": true,
     "passive_mods": { "dex_mod": -6 },
     "encumbrance_always": [ [ "torso", 30 ] ],
-    "movecost_modifier": 1.25
+    "movecost_modifier": 1.25,
+    "active": true,
+    "cost": 20,
+    "kcal": true,
+    "thirst": true,
+    "spawn_item": { "type": "protein_milk", "message": "You milk yourself." }
   },
   {
     "type": "effect_type",
