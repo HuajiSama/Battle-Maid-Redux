@@ -1,10 +1,12 @@
-{
-        "type": "MOD_INFO",
-        "mod-type": "SUPPLEMENTAL",
-        "ident": "battle_maid",
-        "name": "Battle Maid Redux",
-        "description": "Translated and tweaked version of the original Battle Maid mod.",
-        "author": "Vermilion",
-        "category": "creatures",
-        "dependencies": [ "dda" ]
-}
+[
+  {
+    "type": "MOD_INFO",
+    "id": "battle_maid",
+    "name": "Battle Maid Redux",
+    "authors": [ "Vermilion" ],
+    "maintainers": [ "Conference_Calls" ],
+    "description": "Translated and tweaked version of the original Battle Maid mod, newly revamped. See README.md for details",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]
