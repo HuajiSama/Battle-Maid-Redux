@@ -44,15 +44,6 @@
   },
   {
     "type": "mutation",
-    "id": "STYLISH",
-    "name": { "str": "Stylish" },
-    "points": 1,
-    "description": "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
-    "starting_trait": true,
-    "valid": false
-  },
-  {
-    "type": "mutation",
     "id": "SHOGGOTH_BUFF_OK",
     "name": { "str": "Polymorphic Structure" },
     "points": 5,
@@ -77,23 +68,6 @@
     "category": [ "SHOGGOTH" ],
     "changes_to": [ "SHOGGOTH_BUFF_OK" ],
     "passive_mods": { "dex_mod": -4 }
-  },
-  {
-    "type": "mutation",
-    "id": "PER_SLIME_OK",
-    "name": { "str": "Distributed Senses" },
-    "points": 7,
-    "visibility": 10,
-    "ugliness": 10,
-    "description": "You can now extend and reabsorb sensory organs at will, and can therefore ignore most shocks that would overwhelm lesser beings.",
-    "valid": false,
-    "purifiable": false,
-    "leads_to": [ "SLIMESPAWNER" ],
-    "prereqs": [ "PER_SLIME" ],
-    "prereqs2": [ "AMORPHOUS" ],
-    "threshreq": [ "THRESH_SLIME", "THRESH_SHOGGOTH" ],
-    "category": [ "SLIME", "SHOGGOTH" ],
-    "passive_mods": { "per_mod": 5 }
   },
   {
     "type": "mutation",
@@ -145,41 +119,37 @@
   },
   {
     "type": "mutation",
+    "id": "PER_UP",
+    "copy-from": "PER_UP",
+    "extend": [ { "category": [ "SHOGGOTH" ] }
+    ]
+  },
+  {
+    "type": "mutation",
     "id": "PER_SLIME",
-    "name": { "str": "Sensory Disintegration" },
-    "points": -7,
-    "visibility": 10,
-    "ugliness": 10,
-    "description": "Your sense organs are all over the place: eyes extending and retracting, 'ears' of various shapes migrating about, and taste & smell are uncontrollable.  The world is a horrible mixup.  Ugh!",
-    "valid": false,
-    "purifiable": false,
-    "changes_to": [ "PER_SLIME_OK" ],
-    "prereqs": [ "PER_UP" ],
-    "prereqs2": [ "AMORPHOUS" ],
-    "threshreq": [ "THRESH_SLIME", "THRESH_SHOGGOTH" ],
-    "category": [ "SLIME", "SHOGGOTH" ],
-    "passive_mods": { "per_mod": -8 }
+    "copy-from": "PER_SLIME",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "PER_SLIME_OK",
+    "copy-from":"PER_SLIME_OK",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
   },
   {
     "type": "mutation",
     "id": "AMORPHOUS",
-    "name": { "str": "Amorphous Body" },
-    "points": -2,
-    "visibility": 10,
-    "ugliness": 10,
-    "consume_time_modifier": 1.1,
-    "description": "Your flesh is a pleasing gel-like consistency.  Your bodily functions seem to be moving around, and your leg-equivalents flow comfortably - if a little slower than your old meat-legs.",
-    "purifiable": false,
-    "leads_to": [ "INT_SLIME", "PER_SLIME" ],
-    "threshreq": [ "THRESH_SLIME", "THRESH_SHOGGOTH" ],
-    "category": [ "SLIME", "SHOGGOTH" ],
-    "armor": [
-      {
-        "parts": [ "torso", "head", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "mouth", "eyes" ],
-        "bash": 4
-      }
-    ],
-    "movecost_modifier": 1.25
+    "copy-from":"AMORPHOUS",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
   },
   {
     "type": "mutation",
@@ -207,35 +177,30 @@
   },
   {
     "type": "mutation",
+    "id": "HUNGER",
+    "copy-from":"HUNGER",
+    "extend": { "category": [ "SHOGGOTH", "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER2",
+    "copy-from":"HUNGER2",
+    "extend": {"category": [ "SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
     "id": "HUNGER3",
-    "name": { "str": "Extreme Metabolism" },
-    "points": -2,
-    "description": "You consume three times as much food as the average human to maintain your truly superhuman endurance.",
-    "prereqs": [ "HUNGER2" ],
-    "leads_to": [ "EATHEALTH" ],
-    "types": [ "METABOLISM" ],
-    "category": [ "CHIMERA", "SHOGGOTH" ],
-    "metabolism_modifier": 2.0,
-    "stamina_regen_modifier": 0.5
+    "copy-from":"HUNGER3",
+    "extend": {"category": [ "SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "EATHEALTH",
-    "name": { "str": "Hyper-Metabolism" },
-    "points": 15,
-    "description": "Your particular metabolism allows you to burn calories at a prodigious rate to regenerate tissues in a matter of minutes, this is however a very wasteful process.  Activate to start healing.",
-    "prereqs": [ "HUNGER3" ],
-    "types": [ "METABOLISM" ],
-    "threshreq": [ "THRESH_CHIMERA", "THRESH_SHOGGOTH" ],
-    "category": [ "CHIMERA", "SHOGGOTH" ],
-    "valid": false,
-    "active": true,
-    "transform": {
-      "target": "EATHEALTH_active",
-      "msg_transform": "Your hyper-metabolism starts burning up calories.",
-      "active": true,
-      "moves": 0
-    }
+    "copy-from":"EATHEALTH",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
   },
   {
     "type": "mutation",
@@ -435,32 +400,37 @@
   },
   {
     "type": "mutation",
+    "id": "DEX_UP",
+    "copy-from": "DEX_UP",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_2",
+    "copy-from": "DEX_UP_2",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
     "id": "DEX_UP_3",
     "copy-from": "DEX_UP_3",
-    "name": { "str": "Extremely Dextrous" },
-    "points": 3,
-    "description": "You are nimble and quick.  Dexterity + 4",
-    "prereqs": [ "DEX_UP_2" ],
-    "changes_to": [ "DEX_UP_4" ],
-    "extend": { "category": [ "MAID" ] },
-    "passive_mods": { "dex_mod": 4 }
+    "extend": { "category": [ "MAID" ] }
+  },  
+  {
+    "type": "mutation",
+    "id": "INT_UP",
+    "copy-from": "INT_UP",
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "INT_UP_2",
     "copy-from": "INT_UP_2",
-    "name": { "str": "Very Smart" },
-    "points": 2,
-    "description": "You are smarter.  Intelligence + 2",
-    "prereqs": [ "INT_UP" ],
-    "changes_to": [ "INT_UP_3" ],
-    "extend": { "category": [ "MAID" ] },
-    "passive_mods": { "int_mod": 2 }
+    "extend": { "category": [ "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "STYLISH",
-    "copy-from": "STYLISH",
     "name": { "str": "Stylish" },
     "points": 1,
     "description": "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
@@ -629,31 +599,10 @@
   },
   {
     "type": "mutation",
-    "id": "HUNGER",
-    "copy-from": "HUNGER",
-    "name": { "str": "Fast Metabolism" },
-    "points": -2,
-    "description": "You require more food than most people, but recover stamina slightly faster.",
-    "starting_trait": true,
-    "cancels": [ "LIGHTEATER", "COLDBLOOD", "COLDBLOOD2", "COLDBLOOD3", "COLDBLOOD4" ],
-    "changes_to": [ "HUNGER2", "MET_RAT" ],
-    "extend": { "category": [ "MAID" ] },
-    "metabolism_modifier": 0.5,
-    "stamina_regen_modifier": 0.1
-  },
-  {
-    "type": "mutation",
     "id": "FASTHEALER",
     "copy-from": "FASTHEALER",
-    "name": { "str": "Fast Healer" },
-    "points": 2,
-    "description": "You heal faster when sleeping and will even recover small amount of HP when not sleeping.",
-    "starting_trait": true,
-    "cancels": [ "ROT1", "ROT2", "ROT3", "SLOWHEALER", "SLOWHEALER2", "SLOWHEALER3", "MET_RAT" ],
-    "changes_to": [ "FASTHEALER2", "REGEN_LIZ", "MAID_TEKELI" ],
-    "extend": { "category": [ "MAID" ] },
-    "healing_awake": 0.2,
-    "healing_resting": 0.5
+    "extend": { "category": [ "MAID" ] }
+    
   },
   {
     "type": "mutation",
