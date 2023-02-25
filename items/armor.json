@@ -227,8 +227,16 @@
     "volume": "5500 ml",
     "warmth": 30,
     "flags": [ "VARSIZE", "SUPER_FANCY", "OVERSIZE" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "assassins_throwing_dagger": 12 } } ],
-    "ammo": [ "assassins_throwing_dagger" ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "ammo_restriction": { "assassins_throwing_dagger": 12 } },
+      {
+        "pocket_type": "CONTAINER",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "3 kg",
+        "max_item_length": "10 cm",
+        "moves": 75
+      }
+    ],
     "armor": [
       {
         "encumbrance": 12,
