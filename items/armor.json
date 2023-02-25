@@ -354,7 +354,10 @@
     "material": [ "cotton" ],
     "volume": "250 ml",
     "flags": [ "SUPER_FANCY" ],
-    "armor": [ { "material": [ "cotton" ], "material_thickness": 1 } ]
+    "armor": [
+      { "coverage": 100, "covers": [ "leg_l", "leg_r" ], "specifically_covers": [ "leg_hip_l", "leg_hip_r" ] },
+      { "coverage": 50, "covers": [ "leg_l", "leg_r" ], "specifically_covers": [ "leg_upper_l", "leg_upper_r" ] }
+    ]
   },
   {
     "type": "ARMOR",
