@@ -19,11 +19,11 @@
     "copy-from": "mutagen_flavor",
     "type": "COMESTIBLE",
     "name": { "str": "Milk maid Primer" },
-    "description": "Milk maid Primer",
+    "description": "Milk maid primer",
     "color": "light_green",
     "use_action": {
       "type": "consume_drug",
-      "activation_message": "You inject the Milk maid primer.",
+      "activation_message": "You inject the Milk maid Primer.",
       "tools_needed": { "syringe": -1 },
       "vitamins": [ [ "mutagen_milk", 450, 550 ], [ "mutagen", 125 ] ]
     }
