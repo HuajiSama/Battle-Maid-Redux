@@ -39,7 +39,7 @@
     "id": "mut_lab",
     "copy-from": "mut_lab",
     "extend": { 
-    "items": [ [ "book_shoggoth", 2 ], [ "iv_mutagen_maid_flask", 4 ] ]
+    "items": [ [ "book_shoggoth", 2 ], [ "mutagen_shoggoth", 4 ] ]
   }},
   {
     "type": "item_group",
