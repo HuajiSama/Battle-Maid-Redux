@@ -121,8 +121,7 @@
     "type": "mutation",
     "id": "PER_UP",
     "copy-from": "PER_UP",
-    "extend": [ { "category": [ "SHOGGOTH" ] }
-    ]
+    "extend": { "category": [ "SHOGGOTH" ] }
   },
   {
     "type": "mutation",
