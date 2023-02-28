@@ -844,5 +844,22 @@
     "reversible": false,
     "autolearn": true,
     "components": [ [ [ "maid_point", 1000 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "mutagen_shoggoth",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "difficulty": 9,
+    "time": "1 h",
+    "book_learn": [ [ "recipe_serum", 6 ] ],
+    "reversible": false,
+    "autolearn": true,
+    "components": [
+      [ [ "maid_point", 500 ] ],
+      [ [ "meat_shoggoth", 1] ]
+    ]
   }
 ]

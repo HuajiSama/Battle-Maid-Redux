@@ -12,7 +12,10 @@
     "material": [ "maid" ],
     "volume": "250 ml",
     "category": "tools",
-    "use_action": { "type": "mutagen_iv", "mutation_category": "SHOGGOTH" }
+    "use_action": {
+      "type": "consume_drug",
+      "vitamins": [ [ "mutagen_shoggoth", 750, 850 ] ]
+    }
   },
   {
     "type": "GENERIC",
@@ -163,8 +166,8 @@
         "type": "transform",
         "msg": "You can no longer suppress your feelings and began to intimately press against your master's doll...",
         "target": "master_doll_vibe_on",
-        "active": true,
-        "need_charges": 0
+        "need_charges": 0,
+        "ammo_scale": 0
       }
     ]
   },
@@ -190,7 +193,8 @@
         "type": "transform",
         "msg": "Finally, after your body tightens up and you reach your limit, you collapse on the doll with a delighted and exhausted smile...",
         "target": "master_doll_vibe_off",
-        "need_charges": 0
+        "need_charges": 0,
+        "ammo_scale": 0
       },
       { "type": "cast_spell", "spell_id": "bmd_pleasure", "no_fail": true, "level": 1, "need_wielding": true }
     ],
