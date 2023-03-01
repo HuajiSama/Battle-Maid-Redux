@@ -1,7 +1,7 @@
 [
   {
     "type": "recipe",
-    "activity_level": "NO_EXERCISE",
+    "activity_level": "LIGHT_EXERCISE",
     "result": "mutagen_maid",
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_MUTAGEN",
@@ -109,7 +109,7 @@
   },
   {
     "type": "recipe",
-    "activity_level": "NO_EXERCISE",
+    "activity_level": "LIGHT_EXERCISE",
     "result": "mutagen_shoggoth",
     "category": "CC_CHEM",
     "subcategory": "CSC_CHEM_MUTAGEN",
