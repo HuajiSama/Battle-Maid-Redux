@@ -3,7 +3,7 @@
     "type": "COMESTIBLE",
     "comestible_type": "FOOD",
     "id": "shoggoth_heart",
-    "name": { "str": "shoggoth heart", "str_pl": "shoggoth meats" },
+    "name": { "str": "shoggoth heart", "str_pl": "shoggoth hearts" },
     "description": "The heart of a shoggoth. You could eat it to master the beast's morphogenic prowess, or you could use it to 'master' the beast in another way.",
     "weight": "4535 g",
     "symbol": ")",
