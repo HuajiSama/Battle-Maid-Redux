@@ -1,33 +1,33 @@
 [
   {
+    "id": "mutagen_shoggothblood",
+    "copy-from": "mutagen",
     "type": "COMESTIBLE",
-    "comestible_type": "MED",
-    "id": "meat_shoggoth",
-    "name": { "str": "shoggoth heart", "str_pl": "shoggoth meats" },
-    "description": "The heart of a shoggoth. You could eat it to master the beast's morphogenic prowess, or you could use it to 'master' the beast in another way.",
-    "weight": "1000 g",
-    "symbol": ")",
-    "color": "dark_gray",
-    "price": "50 USD",
-    "material": [ "maid" ],
-    "volume": "250 ml",
-    "category": "tools",
+    "name": { "str": "Shoggoth Blood" },
+    "description": "This is blood taken from Shoggoth. The blood itself is wriggling at a slow rate, even though it hasn't been touched by anything. If you intend to use it, you will need a syringe...",
+    "looks_like": "mutagen",
+    "color": "light_green",
+    "addiction_potential": 0,
+    "weight": "50 g",
+    "fun": -10,
+    "container": "flask_glass",
     "use_action": {
       "type": "consume_drug",
-      "vitamins": [ [ "mutagen_shoggoth", 300 ] ]
+      "activation_message": "You inject the Shoggoth Blood.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_shoggoth", 60 ] ]
     }
   },
   {
     "id": "mutagen_shoggoth",
     "copy-from": "mutagen_flavor",
     "type": "COMESTIBLE",
-    "name": { "str": "Shoggoth Blood" },
-    "description": "This is blood taken from Shoggoth. The blood itself is wriggling at a slow rate, even though it hasn't been touched by anything. If you intend to use it, you will need a syringe...",
+    "name": { "str": "shoggoth mutagen" },
+    "description": "shoggoth mutagen.",
     "color": "light_green",
-    "container": "flask_glass",
     "use_action": {
       "type": "consume_drug",
-      "activation_message": "You inject the Shoggoth Blood.",
+      "activation_message": "You inject the shoggoth mutagen.",
       "tools_needed": { "syringe": -1 },
       "vitamins": [ [ "mutagen_shoggoth", 225 ], [ "mutagen", 125 ] ]
     }
