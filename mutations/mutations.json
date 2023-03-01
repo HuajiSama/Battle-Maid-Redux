@@ -119,39 +119,6 @@
   },
   {
     "type": "mutation",
-    "id": "PER_UP",
-    "copy-from": "PER_UP",
-    "extend": { "category": [ "SHOGGOTH" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "PER_SLIME",
-    "copy-from": "PER_SLIME",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
-  },
-  {
-    "type": "mutation",
-    "id": "PER_SLIME_OK",
-    "copy-from":"PER_SLIME_OK",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
-  },
-  {
-    "type": "mutation",
-    "id": "AMORPHOUS",
-    "copy-from":"AMORPHOUS",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
-  },
-  {
-    "type": "mutation",
     "id": "SHUFFLING_HORROR",
     "name": { "str": "Shuffling Horror" },
     "points": 6,
@@ -173,33 +140,6 @@
       "base_damage": { "damage_type": "stab", "amount": 25 },
       "strength_damage": { "damage_type": "cut", "amount": 2 }
     }
-  },
-  {
-    "type": "mutation",
-    "id": "HUNGER",
-    "copy-from":"HUNGER",
-    "extend": { "category": [ "SHOGGOTH", "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "HUNGER2",
-    "copy-from":"HUNGER2",
-    "extend": {"category": [ "SHOGGOTH" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "HUNGER3",
-    "copy-from":"HUNGER3",
-    "extend": {"category": [ "SHOGGOTH" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "EATHEALTH",
-    "copy-from":"EATHEALTH",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
   },
   {
     "type": "mutation",
@@ -328,171 +268,12 @@
   },
   {
     "type": "mutation",
-    "id": "LIGHTSTEP",
-    "copy-from": "LIGHTSTEP",
-    "name": { "str": "Light Step" },
-    "points": 1,
-    "description": "You make less noise while walking.  You're also less likely to set off traps.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "CLUMSY" ]
-  },
-  {
-    "type": "mutation",
-    "id": "CLUMSY",
-    "copy-from": "CLUMSY",
-    "name": { "str": "Clumsy" },
-    "points": -1,
-    "description": "You make more noise while walking.  You're also more likely to set off traps.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "LIGHTSTEP" ]
-  },
-  {
-    "type": "mutation",
-    "id": "PRETTY",
-    "copy-from": "PRETTY",
-    "name": { "str": "Pretty" },
-    "points": 1,
-    "ugliness": -2,
-    "description": "You are a sight to behold.  NPCs who care about such thing will react more kindly to you.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "changes_to": [ "BEAUTIFUL" ]
-  },
-  {
-    "type": "mutation",
-    "id": "BEAUTIFUL",
-    "copy-from": "BEAUTIFUL",
-    "name": { "str": "Beautiful" },
-    "points": 2,
-    "visibility": -4,
-    "ugliness": -4,
-    "description": "You're a real head-turner.  Some people will react well to your appearance, and most people have an easier time trusting you.",
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "prereqs": [ "PRETTY" ],
-    "changes_to": [ "BEAUTIFUL2" ]
-  },
-  {
-    "type": "mutation",
-    "id": "BEAUTIFUL2",
-    "copy-from": "BEAUTIFUL2",
-    "name": { "str": "Very Beautiful" },
-    "points": 3,
-    "visibility": -7,
-    "ugliness": -7,
-    "description": "You are a vision of beauty.  Some people will react very well to your looks, and most people will trust you immediately.",
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "prereqs": [ "BEAUTIFUL" ],
-    "changes_to": [ "BEAUTIFUL3" ]
-  },
-  {
-    "type": "mutation",
-    "id": "BEAUTIFUL3",
-    "copy-from": "BEAUTIFUL3",
-    "name": { "str": "Glorious" },
-    "points": 4,
-    "visibility": -10,
-    "ugliness": -10,
-    "description": "You are incredibly beautiful.  People cannot help themselves for your charms, and will do whatever they can to please you.",
-    "cancels": [ "UGLY", "DEFORMED", "DEFORMED2", "DEFORMED3" ],
-    "prereqs": [ "BEAUTIFUL2" ],
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "DEX_UP",
-    "copy-from": "DEX_UP",
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "DEX_UP_2",
-    "copy-from": "DEX_UP_2",
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "DEX_UP_3",
-    "copy-from": "DEX_UP_3",
-    "extend": { "category": [ "MAID" ] }
-  },  
-  {
-    "type": "mutation",
-    "id": "INT_UP",
-    "copy-from": "INT_UP",
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "INT_UP_2",
-    "copy-from": "INT_UP_2",
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
     "id": "STYLISH",
     "name": { "str": "Stylish" },
     "points": 1,
     "description": "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
     "starting_trait": true,
     "valid": false,
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "DEFT",
-    "copy-from": "DEFT",
-    "name": { "str": "Deft" },
-    "points": 1,
-    "description": "While you're not any better at melee combat, you are better at recovering from a miss, and will be able to attempt another strike faster.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "SQUEAMISH",
-    "copy-from": "SQUEAMISH",
-    "name": { "str": "Squeamish" },
-    "points": -1,
-    "description": "You can't even think about putting filthy clothes on yourself, especially from zombies' corpses.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "ANTIJUNK",
-    "copy-from": "ANTIJUNK",
-    "name": { "str": "Junkfood Intolerance" },
-    "points": -1,
-    "description": "Something in those heavily processed foods doesn't agree with you.  It's possible for you to eat them, but you will suffer morale penalties due to nausea.",
-    "starting_trait": true,
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
-    "id": "ADDICTIVE",
-    "copy-from": "ADDICTIVE",
-    "name": { "str": "Addictive Personality" },
-    "points": -2,
-    "description": "It's easier for you to become addicted to substances, and harder to rid yourself of these addictions.",
-    "starting_trait": true,
-    "valid": false,
-    "extend": { "category": [ "MAID" ] },
-    "cancels": [ "NONADDICTIVE" ]
-  },
-  {
-    "type": "mutation",
-    "id": "ANIMALDISCORD",
-    "copy-from": "ANIMALDISCORD",
-    "name": { "str": "Animal Discord" },
-    "points": -1,
-    "description": "Most animals don't like you, and aggressive animals are more likely to attack you.  This only applies to natural animals such as woodland creatures.",
-    "starting_trait": true,
-    "cancels": [ "ANIMALEMPATH" ],
     "extend": { "category": [ "MAID" ] }
   },
   {
@@ -603,13 +384,6 @@
   },
   {
     "type": "mutation",
-    "id": "FASTHEALER",
-    "copy-from": "FASTHEALER",
-    "extend": { "category": [ "MAID" ] }
-    
-  },
-  {
-    "type": "mutation",
     "id": "MAID_TEKELI",
     "name": { "str": "Tekeli-li" },
     "points": 10,
@@ -629,5 +403,168 @@
     ],
     "healing_awake": 4.45,
     "healing_resting": 4.45
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP",
+    "copy-from": "DEX_UP",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_2",
+    "copy-from": "DEX_UP_2",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEX_UP_3",
+    "copy-from": "DEX_UP_3",
+    "extend": { "category": [ "MAID" ] }
+  },  
+  {
+    "type": "mutation",
+    "id": "INT_UP",
+    "copy-from": "INT_UP",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "INT_UP_2",
+    "copy-from": "INT_UP_2",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PER_UP",
+    "copy-from": "PER_UP",
+    "extend": { "category": [ "SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PER_SLIME",
+    "copy-from": "PER_SLIME",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "PER_SLIME_OK",
+    "copy-from":"PER_SLIME_OK",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "AMORPHOUS",
+    "copy-from":"AMORPHOUS",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER",
+    "copy-from":"HUNGER",
+    "extend": { "category": [ "SHOGGOTH", "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER2",
+    "copy-from":"HUNGER2",
+    "extend": {"category": [ "SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "HUNGER3",
+    "copy-from":"HUNGER3",
+    "extend": {"category": [ "SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "EATHEALTH",
+    "copy-from":"EATHEALTH",
+    "extend": [
+      { "category": [ "SHOGGOTH" ] },
+      { "threshreq": [ "THRESH_SHOGGOTH" ] }
+    ]
+  },
+  {
+    "type": "mutation",
+    "id": "LIGHTSTEP",
+    "copy-from": "LIGHTSTEP",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "CLUMSY",
+    "copy-from": "CLUMSY",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "PRETTY",
+    "copy-from": "PRETTY",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL",
+    "copy-from": "BEAUTIFUL",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL2",
+    "copy-from": "BEAUTIFUL2",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BEAUTIFUL3",
+    "copy-from": "BEAUTIFUL3",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "DEFT",
+    "copy-from": "DEFT",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SQUEAMISH",
+    "copy-from": "SQUEAMISH",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANTIJUNK",
+    "copy-from": "ANTIJUNK",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ADDICTIVE",
+    "copy-from": "ADDICTIVE",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "ANIMALDISCORD",
+    "copy-from": "ANIMALDISCORD",
+    "cancels": [ "ANIMALEMPATH" ],
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "FASTHEALER",
+    "copy-from": "FASTHEALER",
+    "extend": { "category": [ "MAID" ] }
   }
 ]

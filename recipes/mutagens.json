@@ -1,0 +1,68 @@
+[
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "milk_serum",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "skills_required": [ "firstaid", 3 ],
+    "difficulty": 7,
+    "time": "2 h",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_serum", 6 ], [ "recipe_animal", 6 ] ],
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [ [ [ "mutagen_cattle", 2 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "LIGHT_EXERCISE",
+    "result": "mutagen_milk",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "skills_required": [ "firstaid", 3 ],
+    "difficulty": 7,
+    "time": "2 h",
+    "batch_time_factors": [ 20, 5 ],
+    "book_learn": [ [ "recipe_serum", 6 ], [ "recipe_animal", 6 ] ],
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [ [ [ "mutagen_cattle", 2 ] ] ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "mutagen_maid",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "difficulty": 9,
+    "time": "1 h",
+    "book_learn": [ [ "recipe_serum", 6 ] ],
+    "reversible": false,
+    "autolearn": true,
+    "components": [ [ [ "maid_point", 1000 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "NO_EXERCISE",
+    "result": "mutagen_shoggoth",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_MUTAGEN",
+    "skill_used": "chemistry",
+    "difficulty": 8,
+    "time": "1 h",
+    "charges": 3,
+    "book_learn": [ [ "recipe_serum", 6 ] ],
+    "reversible": false,
+    "autolearn": true,
+    "using": [ [ "serum_production_standard", 37 ] ],
+    "components": [
+      [ [ "maid_point", 500 ] ],
+      [ [ "meat_shoggoth", 1] ]
+    ]
+  }
+]
+  
