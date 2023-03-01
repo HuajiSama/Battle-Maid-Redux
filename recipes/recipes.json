@@ -34,7 +34,7 @@
     "autolearn": false,
     "book_learn": [ [ "book_shoggoth", 9 ] ],
     "tools": [ [ [ "chemistry_set", 5 ] ] ],
-    "components": [ [ [ "meat_shoggoth", 2 ] ], [ [ "flask_glass", 1 ] ], [ [ "blood", 10 ] ] ]
+    "components": [ [ [ "shoggoth_heart", 2 ] ], [ [ "flask_glass", 1 ] ], [ [ "blood", 10 ] ] ]
   },
   {
     "type": "recipe",
