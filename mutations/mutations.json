@@ -144,24 +144,13 @@
   {
     "type": "mutation",
     "id": "MUT_TOUGH",
-    "name": { "str": "Resilient" },
-    "points": 2,
-    "description": "You can survive injuries that would incapacitate humans: you get a 20% bonus to all hit points.  Stacks with Tough, etc.",
-    "social_modifiers": { "intimidate": 2 },
-    "prereqs": [ "LARGE_OK", "HUGE_OK", "STR_UP_3", "STR_UP_4", "MASOCHIST_MED", "SHOGGOTH_BUFF_OK" ],
-    "threshreq": [
-      "THRESH_URSINE",
-      "THRESH_CATTLE",
-      "THRESH_CHIMERA",
-      "THRESH_MEDICAL",
-      "THRESH_LIZARD",
-      "THRESH_BEAST",
-      "THRESH_SHOGGOTH"
-    ],
-    "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
-    "changes_to": [ "MUT_TOUGH2" ],
-    "category": [ "URSINE", "CATTLE", "CHIMERA", "BEAST", "LIZARD", "MEDICAL", "SHOGGOTH" ],
-    "hp_modifier_secondary": 0.2
+    "copy-from": "MUT_TOUGH",
+    "extend": { 
+      "prereqs": [ "MASOCHIST_MED", "SHOGGOTH_BUFF_OK" ],
+      "threshreq": [ "THRESH_MEDICAL", "THRESH_SHOGGOTH" ],
+      "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
+      "category": [ "MEDICAL", "SHOGGOTH" ]
+    }
   },
   {
     "type": "mutation",
