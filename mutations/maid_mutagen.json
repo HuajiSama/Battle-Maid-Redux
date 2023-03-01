@@ -14,7 +14,7 @@
     "category": "tools",
     "use_action": {
       "type": "consume_drug",
-      "vitamins": [ [ "mutagen_shoggoth", 750, 850 ] ]
+      "vitamins": [ [ "mutagen_shoggoth", 300 ] ]
     }
   },
   {
