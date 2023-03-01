@@ -143,17 +143,6 @@
   },
   {
     "type": "mutation",
-    "id": "MUT_TOUGH",
-    "copy-from": "MUT_TOUGH",
-    "extend": { 
-      "prereqs": [ "MASOCHIST_MED", "SHOGGOTH_BUFF_OK" ],
-      "threshreq": [ "THRESH_MEDICAL", "THRESH_SHOGGOTH" ],
-      "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
-      "category": [ "MEDICAL", "SHOGGOTH" ]
-    }
-  },
-  {
-    "type": "mutation",
     "id": "THRESH_SHOGGOTH",
     "name": { "str": "Tekeli-li?" },
     "points": 1,
@@ -555,5 +544,16 @@
     "id": "FASTHEALER",
     "copy-from": "FASTHEALER",
     "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "MUT_TOUGH",
+    "copy-from": "MUT_TOUGH",
+    "extend": { 
+      "prereqs": [ "MASOCHIST_MED", "SHOGGOTH_BUFF_OK" ],
+      "threshreq": [ "THRESH_MEDICAL", "THRESH_SHOGGOTH" ],
+      "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],
+      "category": [ "MEDICAL", "SHOGGOTH" ]
+    }
   }
 ]
