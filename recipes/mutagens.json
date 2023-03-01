@@ -31,6 +31,7 @@
     "components": [
       [ [ "mutagen_maid", 1 ] ],
       [
+        [ "maid_point", 500 ],
         [ "maid_dress", 1 ],
         [ "maid_dress_french", 1 ],
         [ "jokyu_fuku", 1 ],
