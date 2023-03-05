@@ -173,7 +173,7 @@
     "use_action": [
       {
         "type": "transform",
-        "menu_text": "Finish",
+        "menu_text": "Turn off",
         "msg": "Finally, after your body tightens up and you reach your limit, you collapse on the doll with a delighted and exhausted smile...",
         "target": "master_doll_vibe_off",
         "need_charges": 0,
