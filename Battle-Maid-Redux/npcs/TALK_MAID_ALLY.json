@@ -145,7 +145,7 @@
     "id": "TALK_SHOGGOTH_HEART3",
     "type": "talk_topic",
     "dynamic_line": "For my beloved master, I would do anything! Oh, if you ever change your mind, just put my heart back in the flask - I'll be back in no time!",
-    "speaker_effect": { "effect": [ { "u_spawn_item": "meat_shoggoth", "count": 2 }, "npc_die" ] },
+    "speaker_effect": { "effect": [ { "u_spawn_item": "shoggoth_heart", "count": 2 }, "npc_die" ] },
     "responses": [ { "text": "...", "topic": "TALK_DONE" } ]
   },
   {
