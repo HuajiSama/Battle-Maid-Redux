@@ -27,9 +27,7 @@
       [ "MAID_RESTRICT", 100 ],
       [ "PRETTY", 100 ]
     ],
-    "worn_override": "NC_SHOGGOTH_MAID_worn",
-    "carry_override": "naked_prisoner",
-    "weapon_override": "naked_prisoner"
+    "worn_override": "NC_SHOGGOTH_MAID_worn"
   },
   {
     "type": "npc_class",
@@ -57,8 +55,6 @@
       [ "hair_brown_long", 25 ],
       [ "PRETTY", 100 ]
     ],
-    "worn_override": "NC_MAID_worn",
-    "carry_override": "naked_prisoner",
-    "weapon_override": "naked_prisoner"
+    "worn_override": "NC_MAID_worn"
   }
 ]
