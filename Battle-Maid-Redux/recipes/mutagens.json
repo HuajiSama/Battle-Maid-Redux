@@ -123,13 +123,7 @@
     "reversible": false,
     "autolearn": true,
     "using": [ [ "serum_production_standard", 37 ] ],
-    "components": [
-      [ [ "mutagen_shoggothblood", 1 ] ],
-      [
-        [ "mutagen_shoggothblood", 1 ],
-        [ "maid_point", 500 ]
-      ] 
-    ] 
+    "components": [ [ [ "mutagen_shoggothblood", 1 ] ], [ [ "mutagen_shoggothblood", 1 ], [ "maid_point", 500 ] ] ]
   },
   {
     "type": "recipe",
@@ -147,4 +141,3 @@
     "components": [ [ [ "mutagen_shoggoth", 1 ] ], [ [ "maid_point", 500 ] ] ]
   }
 ]
-  

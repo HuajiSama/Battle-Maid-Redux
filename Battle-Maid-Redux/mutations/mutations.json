@@ -399,7 +399,7 @@
     "id": "DEX_UP_3",
     "copy-from": "DEX_UP_3",
     "extend": { "category": [ "MAID" ] }
-  },  
+  },
   {
     "type": "mutation",
     "id": "INT_UP",
@@ -422,55 +422,43 @@
     "type": "mutation",
     "id": "PER_SLIME",
     "copy-from": "PER_SLIME",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
+    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
   },
   {
     "type": "mutation",
     "id": "PER_SLIME_OK",
-    "copy-from":"PER_SLIME_OK",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
+    "copy-from": "PER_SLIME_OK",
+    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
   },
   {
     "type": "mutation",
     "id": "AMORPHOUS",
-    "copy-from":"AMORPHOUS",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
+    "copy-from": "AMORPHOUS",
+    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
   },
   {
     "type": "mutation",
     "id": "HUNGER",
-    "copy-from":"HUNGER",
+    "copy-from": "HUNGER",
     "extend": { "category": [ "SHOGGOTH", "MAID" ] }
   },
   {
     "type": "mutation",
     "id": "HUNGER2",
-    "copy-from":"HUNGER2",
-    "extend": {"category": [ "SHOGGOTH" ] }
+    "copy-from": "HUNGER2",
+    "extend": { "category": [ "SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "HUNGER3",
-    "copy-from":"HUNGER3",
-    "extend": {"category": [ "SHOGGOTH" ] }
+    "copy-from": "HUNGER3",
+    "extend": { "category": [ "SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "EATHEALTH",
-    "copy-from":"EATHEALTH",
-    "extend": [
-      { "category": [ "SHOGGOTH" ] },
-      { "threshreq": [ "THRESH_SHOGGOTH" ] }
-    ]
+    "copy-from": "EATHEALTH",
+    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
   },
   {
     "type": "mutation",
@@ -549,7 +537,7 @@
     "type": "mutation",
     "id": "MUT_TOUGH",
     "copy-from": "MUT_TOUGH",
-    "extend": { 
+    "extend": {
       "prereqs": [ "MASOCHIST_MED", "SHOGGOTH_BUFF_OK" ],
       "threshreq": [ "THRESH_MEDICAL", "THRESH_SHOGGOTH" ],
       "cancels": [ "FLIMSY", "FLIMSY2", "FLIMSY3", "GLASSJAW" ],

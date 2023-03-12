@@ -3,10 +3,7 @@
     "type": "item_group",
     "id": "NC_SHOGGOTH_MAID_worn",
     "subtype": "collection",
-    "entries": [
-      { "item": "maid_dress_french_shoggoth", "prob": 100 },
-      { "item": "maid_cap_shoggoth", "prob": 100 }
-    ]
+    "entries": [ { "item": "maid_dress_french_shoggoth", "prob": 100 }, { "item": "maid_cap_shoggoth", "prob": 100 } ]
   },
   {
     "type": "item_group",
