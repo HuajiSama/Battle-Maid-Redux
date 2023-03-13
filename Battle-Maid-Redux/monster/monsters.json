@@ -37,7 +37,7 @@
     "death_drops": "mon_shoggoth_death_drops"
   },
   {
-    "//":"BONES",
+    "//": "BONES",
     "type": "MONSTER",
     "id": "maid_master",
     "name": { "str": "master", "str_pl": "masters" },
@@ -124,7 +124,7 @@
     "harvest": "exempt",
     "death_function": {
       "message": "The %s's body leaks acid and explodes.",
-      "effect": { "id": "death_acid", "hit_self": true }, 
+      "effect": { "id": "death_acid", "hit_self": true },
       "corpse_type": "NO_CORPSE"
     },
     "special_attacks": [ [ "ACID_BARF", 1 ] ],
