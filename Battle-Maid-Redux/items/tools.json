@@ -1,5 +1,18 @@
 [
   {
+    "id": "maid_bell",
+    "type": "GENERIC",
+    "category": "other",
+    "name": { "str": "ceremony doll", "str_pl": "ceremony dolls" },
+    "description": "This is a doll in the shape of your beloved master, but with an additional 'special attachment.' By using it in a certain (rather embarassing) type of private ritual, you can catalyze your powerful desires towards your beloved master into a usable type of energy.",
+    "weight": "300 g",
+    "volume": "750 ml",
+    "price": "54 USD",
+    "material": [ "cotton" ],
+    "symbol": "m",
+    "color": "brown"
+  },
+  {
     "id": "master_doll",
     "type": "TOOL",
     "category": "other",
@@ -14,57 +27,35 @@
     "flags": [ "NO_UNLOAD", "NO_RELOAD" ],
     "max_charges": 48,
     "initial_charges": 48,
-    "relic_data": { "charge_info": { "regenerate_ammo": true, "recharge_type": "periodic", "time": "1 h" } }
-  },
-  {
-    "id": "maid_bell",
-    "type": "GENERIC",
-    "category": "other",
-    "name": { "str": "ceremony doll", "str_pl": "ceremony dolls" },
-    "description": "This is a doll in the shape of your beloved master, but with an additional 'special attachment.' By using it in a certain (rather embarassing) type of private ritual, you can catalyze your powerful desires towards your beloved master into a usable type of energy.",
-    "weight": "300 g",
-    "volume": "750 ml",
-    "price": "54 USD",
-    "material": [ "cotton" ],
-    "symbol": "m",
-    "color": "brown"
-  },
-  {
-    "id": "master_doll_vibe_off",
-    "type": "TOOL",
-    "category": "other",
-    "name": { "str": "master doll (vibrator) (off)" },
-    "description": "This is a doll in the shape of your beloved master, but with an additional 'special attachment.' By using it in a certain (rather embarassing) type of private ritual, you can release an explosion of desire towards your beloved master and transform it into a usable type of energy.",
-    "weight": "400 g",
-    "volume": "750 ml",
-    "price": "54 USD",
-    "material": [ "cotton", "plastic" ],
-    "symbol": "m",
-    "color": "brown",
-    "ammo": [ "battery" ],
-    "use_action": [
-      {
-        "type": "transform",
-        "msg": "You can no longer suppress your feelings and began to intimately press against your master's doll...",
-        "target": "master_doll_vibe_on",
-        "need_charges": 0,
-        "ammo_scale": 0
-      }
-    ],
+    "charges_per_use": 48,
     "pocket_data": [
       {
-        "pocket_type": "MAGAZINE_WELL",
+        "pocket_type": "MAGAZINE",
         "rigid": true,
-        "flag_restriction": [ "BATTERY_LIGHT", "BATTERY_ULTRA_LIGHT" ],
-        "default_magazine": "light_battery_cell"
+        "ammo_restriction": { "maid_power": 48 }
       }
-    ]
+    ],
+    "use_action": [
+      {
+        "type": "cast_spell", "spell_id": "master_doll_spell",
+        "msg": "You use master doll.",
+        "no_fail": true,
+        "level": 1
+      }
+    ],
+    "relic_data": {
+      "charge_info": {
+        "regenerate_ammo": true,
+        "recharge_type": "periodic",
+        "time": "1 h"
+      }
+    }
   },
   {
-    "id": "master_doll_vibe_on",
+    "id": "master_doll_vibe",
     "type": "TOOL",
     "category": "other",
-    "name": { "str": "master doll (vibrator) (on)" },
+    "name": { "str": "master doll (vibrator)" },
     "description": "This is a doll in the shape of your beloved master, but with an additional 'special attachment.' By using it in a certain (rather embarassing) type of private ritual, you can release an explosion of desire towards your beloved master and transform it into a usable type of energy.",
     "weight": "400 g",
     "volume": "750 ml",
@@ -74,17 +65,18 @@
     "color": "brown",
     "ammo": [ "battery" ],
     "charges_per_use": 10,
-    "revert_to": "master_doll_vibe_off",
+    "chat_topics": [ "TALK_VIBE1" ],
     "use_action": [
       {
-        "type": "transform",
-        "menu_text": "Turn off",
-        "msg": "Finally, after your body tightens up and you reach your limit, you collapse on the doll with a delighted and exhausted smile...",
-        "target": "master_doll_vibe_off",
-        "need_charges": 0,
-        "ammo_scale": 0
-      },
-      { "type": "cast_spell", "spell_id": "bmd_pleasure", "no_fail": true, "level": 1, "need_wielding": true }
+        "type": "effect_on_conditions",
+        "description": "♂♀",
+        "effect_on_conditions": [
+          {
+            "id": "TALK_VIBE1",
+            "effect": [ "open_dialogue" ]
+          }
+        ]
+      }
     ],
     "pocket_data": [
       {

@@ -1,0 +1,74 @@
+[
+  {
+    "type": "SPELL",
+    "id": "master_doll_spell",
+    "effect": "effect_on_condition",
+    "effect_str": "master_doll_eoc",
+    "name": "master doll",
+    "description": "测试",
+    "shape": "blast",
+    "valid_targets": [ "self" ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "master_doll_eoc",
+    "condition": { "u_has_item": "master_doll" },
+    "effect": [ { "u_spawn_item": "maid_point", "count": 1 } ]
+  },
+  {
+    "type": "SPELL",
+    "id": "master_doll_vibe_spell",
+    "effect": "effect_on_condition",
+    "effect_str": "master_doll_vibe_eoc",
+    "name": "Test Effect Name",
+    "description": "测试",
+    "shape": "blast",
+    "eocs": [ "EOC_SHILLS_BRANCH" ],
+    "chat_topics": [ "TALK_VIBE1" ],
+    "valid_targets": [ "self" ]
+  },
+  {
+    "id": "TALK_VIBE1",
+    "type": "talk_topic",
+    "dynamic_line": "You can no longer suppress your feelings and began to intimately press against your master's doll...",
+    "responses": [
+      {
+        "text": "...",
+        "topic": "TALK_VIBE2"
+      }
+    ]
+  },
+  {
+    "id": "TALK_VIBE2",
+    "type": "talk_topic",
+    "condition": { "u_has_item": "master_doll_vibe", "charges": 10 },
+    "dynamic_line": "You reach the climax and feel filled with a roaring energy!",
+    "responses": [
+      { 
+        "text": "♂♀",
+        "topic": "TALK_VIBE2",
+        "effect": [
+          { "u_consume_item": "master_doll_vibe", "charges": 10 },
+          { "u_spawn_item": "maid_point", "count": 1 }
+        ]
+      },
+      { 
+        "text": "Turn off",
+        "topic": "TALK_VIBE3",
+        "effect": [ { "u_spawn_item": "maid_point", "count": 1 } ]
+      }
+    ]
+  },
+  {
+    "id": "TALK_VIBE3",
+    "type": "talk_topic",
+    "dynamic_line": "Finally, after your body tightens up and you reach your limit, you collapse on the doll with a delighted and exhausted smile...",
+    "responses": [
+      {
+        "text": "...",
+        "topic": "TALK_DONE",
+        "effect": { "u_cast_spell": { "id": "bmd_pleasure" } }
+      }
+    ]
+  }
+]

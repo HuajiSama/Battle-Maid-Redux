@@ -91,6 +91,8 @@
           { "id": "overlay_wielded_maid_mess_kit",                "fg": 43, "rotates": false },
           { "id": "master_doll",                                  "fg": 44, "rotates": false },
           { "id": "overlay_wielded_master_doll",                  "fg": 44, "rotates": false },
+          { "id": "master_doll_vibe",                             "fg": 45, "rotates": false },
+          { "id": "overlay_wielded_master_doll_vibe",             "fg": 45, "rotates": false },
           { "id": "master_doll_vibe_off",                         "fg": 45, "rotates": false },
           { "id": "overlay_wielded_master_doll_vibe_off",         "fg": 45, "rotates": false },
           { "id": "master_doll_vibe_on",                          "fg": 46, "rotates": false },
