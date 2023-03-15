@@ -23,6 +23,11 @@
       { "text": "There's something I want you to do.", "topic": "TALK_MAID_ORDERS" },
       { "text": "I just wanted to talk for a bit.", "topic": "TALK_MAID_SOCIAL" },
       {
+        "text": "I want you to use this item.",
+        "topic": "TALK_MAID_ALLY",
+        "effect": "npc_gets_item_to_use"
+      },
+      {
         "text": "It's time for your milking.",
         "topic": "TALK_MAID_MILK",
         "condition": { "and": [ { "npc_has_trait": "BOUNTIFUL" }, { "not": { "npc_has_effect": "maid_milked" } } ] }
@@ -94,11 +99,10 @@
     "type": "talk_topic",
     "dynamic_line": "Milking time♪ Please treat me well, master!",
     "responses": [
-      { "text": "Later, then.", "topic": "TALK_DONE", "condition": { "npc_has_effect": "maid_milked" } },
+      { "text": "Later, then.", "topic": "TALK_DONE"  },
       {
         "text": "Let's get to work.",
-        "topic": "TALK_MAID_MILK2",
-        "condition": { "not": { "npc_has_effect": "maid_milked" } }
+        "topic": "TALK_MAID_MILK2"
       }
     ]
   },
@@ -106,7 +110,13 @@
     "id": "TALK_MAID_MILK2",
     "type": "talk_topic",
     "dynamic_line": "Ah...Ahn♪ Oh master, that feels so...good...",
-    "speaker_effect": { "effect": [ { "u_spawn_item": "milk", "count": 4 }, { "npc_add_effect": "maid_milked", "duration": 28000 } ] },
+    "speaker_effect": {
+      "effect": [
+        { "u_consume_item": "bottle_glass", "count": 0 },
+        { "u_spawn_item": "milk", "container": "bottle_glass", "count": 3 },
+        { "npc_add_effect": "maid_milked", "duration": 21000 }
+      ]
+    },
     "responses": [
       {
         "text": "We're not done yet. I want your 'milk' too.",
@@ -120,7 +130,7 @@
     "id": "TALK_MAID_MILK3",
     "type": "talk_topic",
     "dynamic_line": "Th-there too? N-no, wait, I'm going to...! Master, please, I can't stop - urgh, please, just let me rest...!",
-    "speaker_effect": { "effect": [ { "u_spawn_item": "protein_milk", "count": 1 } ] },
+    "speaker_effect": { "effect": [ { "u_spawn_item": "protein_milk", "container": "bottle_glass", "count": 1 } ] },
     "responses": [ { "text": "That's all for now.", "topic": "TALK_DONE" } ]
   },
   {
