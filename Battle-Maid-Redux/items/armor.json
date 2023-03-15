@@ -9,10 +9,12 @@
     "volume": "4250 ml",
     "price": "50 USD",
     "material": [ "cotton" ],
+    "material_thickness": 4,
     "symbol": "[",
     "color": "black",
     "to_hit": 0,
     "warmth": 20,
+    "environmental_protection": 1,
     "flags": [ "VARSIZE", "FANCY", "OVERSIZE", "POCKETS" ],
     "pocket_data": [
       {
@@ -41,10 +43,7 @@
       {
         "encumbrance": [ 6, 11 ],
         "coverage": 95,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
-        "material": [ "cotton" ],
-        "material_thickness": 4,
-        "environmental_protection": 1
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
       }
     ]
   },
@@ -58,6 +57,7 @@
     "volume": "250 ml",
     "price": "50 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "blue",
     "warmth": 5,
@@ -75,9 +75,7 @@
       {
         "encumbrance": [ 5, 10 ],
         "coverage": 70,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
-        "material": [ "cotton" ],
-        "material_thickness": 1
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
       }
     ]
   },
@@ -92,6 +90,7 @@
     "volume": "250 ml",
     "price": "50 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "blue",
     "warmth": 20,
@@ -99,10 +98,8 @@
     "armor": [
       {
         "encumbrance": [ 5, 10 ],
-        "coverage": 0,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
-        "material": [ "cotton" ],
-        "material_thickness": 1
+        "coverage": 50,
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
       }
     ]
   },
@@ -117,9 +114,11 @@
     "volume": "10500 ml",
     "price": "1100 USD",
     "material": [ "kevlar_layered", "cotton" ],
+    "material_thickness": 4,
     "symbol": "[",
     "color": "black",
     "warmth": 30,
+    "environmental_protection": 5,
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
@@ -148,10 +147,7 @@
       {
         "encumbrance": [ 8, 17 ],
         "coverage": 100,
-        "covers": [ "leg_l", "leg_r", "head", "torso", "arm_l", "arm_r" ],
-        "material": [ "kevlar_layered", "cotton" ],
-        "material_thickness": 4,
-        "environmental_protection": 5
+        "covers": [ "leg_l", "leg_r", "head", "torso", "arm_l", "arm_r" ]
       }
     ]
   },
@@ -165,9 +161,11 @@
     "volume": "5 L",
     "price": "50 USD",
     "material": [ "cotton" ],
+    "material_thickness": 4,
     "symbol": "[",
     "color": "brown",
     "warmth": 20,
+    "environmental_protection": 1,
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
@@ -183,10 +181,7 @@
       {
         "encumbrance": [ 9, 15 ],
         "coverage": 95,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ],
-        "material": [ "cotton" ],
-        "material_thickness": 4,
-        "environmental_protection": 1
+        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
       }
     ]
   },
@@ -203,13 +198,13 @@
     "symbol": "[",
     "color": "white",
     "warmth": 6,
+    "material_thickness": 1,
     "flags": [ "VARSIZE", "SKINTIGHT", "SUPER_FANCY", "OVERSIZE" ],
     "armor": [
       {
+        "encumbrance": 1,
         "coverage": 85,
-        "covers": [ "foot_l", "foot_r", "leg_l", "leg_r" ],
-        "material": [ "cotton" ],
-        "material_thickness": 1
+        "covers": [ "foot_l", "foot_r", "leg_l", "leg_r" ]
       }
     ]
   },
@@ -223,9 +218,11 @@
     "volume": "5500 ml",
     "price": "210 USD",
     "material": [ "cotton" ],
+    "material_thickness": 4,
     "symbol": "[",
     "color": "dark_gray",
     "warmth": 30,
+    "environmental_protection": 1,
     "flags": [ "VARSIZE", "SUPER_FANCY", "OVERSIZE" ],
     "pocket_data": [
       { "pocket_type": "MAGAZINE", "ammo_restriction": { "assassins_throwing_dagger": 12 } },
@@ -241,10 +238,7 @@
       {
         "encumbrance": 12,
         "coverage": 95,
-        "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r" ],
-        "material": [ "cotton" ],
-        "material_thickness": 4,
-        "environmental_protection": 1
+        "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r" ]
       }
     ]
   },
@@ -259,9 +253,11 @@
     "volume": "11250 ml",
     "price": "1100 USD",
     "material": [ "kevlar_layered", "cotton" ],
+    "material_thickness": 4,
     "symbol": "[",
     "color": "dark_gray",
     "warmth": 30,
+    "environmental_protection": 5,
     "pocket_data": [
       { "pocket_type": "MAGAZINE", "ammo_restriction": { "assassins_throwing_dagger": 12 } },
       {
@@ -285,10 +281,7 @@
       {
         "encumbrance": [ 9, 17 ],
         "coverage": 100,
-        "covers": [ "leg_l", "leg_r", "head", "torso", "arm_l", "arm_r" ],
-        "material": [ "kevlar_layered", "cotton" ],
-        "material_thickness": 4,
-        "environmental_protection": 5
+        "covers": [ "leg_l", "leg_r", "head", "torso", "arm_l", "arm_r" ]
       }
     ]
   },
@@ -302,11 +295,18 @@
     "volume": "250 ml",
     "price": "20 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "white",
     "warmth": 30,
     "flags": [ "VARSIZE" ],
-    "armor": [ { "coverage": 60, "covers": [ "head" ], "material": [ "cotton" ], "material_thickness": 1 } ]
+    "armor": [
+      {
+        "encumbrance_modifiers": [ "NONE" ],
+        "coverage": 60,
+        "covers": [ "head" ]
+      }
+    ]
   },
   {
     "id": "maid_cap_shoggoth",
@@ -319,11 +319,18 @@
     "volume": "250 ml",
     "price": "20 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "white",
     "warmth": 30,
     "flags": [ "VARSIZE", "STURDY", "FANCY" ],
-    "armor": [ { "coverage": 0, "covers": [ "head" ], "material": [ "cotton" ], "material_thickness": 1 } ]
+    "armor": [
+      {
+        "encumbrance_modifiers": [ "NONE" ],
+        "coverage": 30,
+        "covers": [ "head" ]
+      }
+    ]
   },
   {
     "id": "cat_maid_cap",
@@ -335,11 +342,17 @@
     "volume": "250 ml",
     "price": "20 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "white",
     "warmth": 30,
     "flags": [ "VARSIZE", "FANCY" ],
-    "armor": [ { "coverage": 60, "covers": [ "head" ], "material": [ "cotton" ], "material_thickness": 1 } ]
+    "armor": [
+      {
+        "coverage": 60,
+        "covers": [ "head" ]
+      }
+    ]
   },
   {
     "id": "petticoat",
@@ -351,12 +364,21 @@
     "volume": "250 ml",
     "price": 500,
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "white",
     "flags": [ "SUPER_FANCY" ],
     "armor": [
-      { "coverage": 100, "covers": [ "leg_l", "leg_r" ], "specifically_covers": [ "leg_hip_l", "leg_hip_r" ] },
-      { "coverage": 50, "covers": [ "leg_l", "leg_r" ], "specifically_covers": [ "leg_upper_l", "leg_upper_r" ] }
+      {
+        "coverage": 100,
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_hip_l", "leg_hip_r" ]
+      },
+      {
+        "coverage": 50,
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ]
+      }
     ]
   },
   {
@@ -369,11 +391,17 @@
     "volume": "250 ml",
     "price": "50 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "white",
     "warmth": 5,
     "flags": [ "VARSIZE", "SKINTIGHT", "OVERSIZE" ],
-    "armor": [ { "coverage": 15, "covers": [ "leg_l", "leg_r" ], "material": [ "cotton" ], "material_thickness": 1 } ]
+    "armor": [
+      {
+        "coverage": 15,
+        "covers": [ "leg_l", "leg_r" ]
+      }
+    ]
   },
   {
     "id": "briefs_kemo",
@@ -384,11 +412,17 @@
     "volume": "250 ml",
     "price": "10 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "white",
     "warmth": 5,
     "flags": [ "VARSIZE", "SKINTIGHT", "OVERSIZE" ],
-    "armor": [ { "coverage": 15, "covers": [ "leg_l", "leg_r" ], "material": [ "cotton" ], "material_thickness": 1 } ]
+    "armor": [
+      {
+        "coverage": 15,
+        "covers": [ "leg_l", "leg_r" ]
+      }
+    ]
   },
   {
     "id": "maids_scarf",
@@ -400,19 +434,18 @@
     "volume": "1 L",
     "price": "15 USD",
     "material": [ "cotton" ],
+    "material_thickness": 1,
     "symbol": "[",
     "color": "light_gray",
     "to_hit": -3,
     "warmth": 20,
+    "environmental_protection": 5,
     "flags": [ "OVERSIZE", "POCKETS", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
     "armor": [
       {
-        "encumbrance": 0,
+        "encumbrance": 1,
         "coverage": 100,
-        "covers": [ "mouth" ],
-        "material": [ "cotton" ],
-        "material_thickness": 1,
-        "environmental_protection": 5
+        "covers": [ "mouth" ]
       }
     ]
   }
