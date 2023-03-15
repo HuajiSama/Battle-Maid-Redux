@@ -1,6 +1,7 @@
 [
   {
-    "id": "maid_dress",
+    "id": "maid_dress_bmd",
+    "copy-from": "maid_dress",
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "name": { "str": "Victorian maid dress", "str_pl": "Victorian maid dresses" },
@@ -40,15 +41,14 @@
       }
     ],
     "armor": [
-      {
-        "encumbrance": [ 6, 11 ],
-        "coverage": 95,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
-      }
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 6, 11 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 95, "encumbrance": [ 6, 6 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 95, "encumbrance": [ 6, 6 ] }
     ]
   },
   {
     "id": "maid_dress_french",
+    "copy-from": "maid_dress",
     "type": "TOOL_ARMOR",
     "category": "clothing",
     "name": { "str": "French maid dress", "str_pl": "French maid dresses" },
@@ -72,15 +72,14 @@
       }
     ],
     "armor": [
-      {
-        "encumbrance": [ 5, 10 ],
-        "coverage": 70,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
-      }
+      { "covers": [ "torso" ], "coverage": 70, "encumbrance": [ 5, 7 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 50, "encumbrance": [ 5, 5 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 50, "encumbrance": [ 5, 5 ] }
     ]
   },
   {
     "id": "maid_dress_french_shoggoth",
+    "copy-from": "maid_dress_french",
     "looks_like": "maid_dress_french",
     "type": "TOOL_ARMOR",
     "category": "clothing",
@@ -96,15 +95,14 @@
     "warmth": 20,
     "flags": [ "VARSIZE", "SUPER_FANCY", "OVERSIZE", "STURDY" ],
     "armor": [
-      {
-        "encumbrance": [ 5, 10 ],
-        "coverage": 50,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
-      }
+      { "covers": [ "torso" ], "coverage": 50, "encumbrance": [ 5, 7 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 30, "encumbrance": [ 5, 5 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 30, "encumbrance": [ 5, 5 ] }
     ]
   },
   {
     "id": "survivor_maid_dress",
+    "copy-from": "maid_dress",
     "repairs_like": "lsurvivor_suit",
     "type": "TOOL_ARMOR",
     "category": "armor",
@@ -144,11 +142,10 @@
     ],
     "flags": [ "VARSIZE", "WATERPROOF", "RAINPROOF", "STURDY", "FANCY", "OVERSIZE", "POCKETS" ],
     "armor": [
-      {
-        "encumbrance": [ 8, 17 ],
-        "coverage": 100,
-        "covers": [ "leg_l", "leg_r", "head", "torso", "arm_l", "arm_r" ]
-      }
+      { "covers": [ "head" ], "coverage": 80, "encumbrance": [ 8, 8 ] },
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 10, 20 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 90, "encumbrance": [ 9, 9 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 90, "encumbrance": [ 9, 9 ] }
     ]
   },
   {
@@ -178,11 +175,9 @@
     "flags": [ "VARSIZE", "FANCY", "OVERSIZE" ],
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "DEXTERITY", "add": 2 } ] } ] },
     "armor": [
-      {
-        "encumbrance": [ 9, 15 ],
-        "coverage": 95,
-        "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ]
-      }
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 9, 15 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 90, "encumbrance": [ 9, 9 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 90, "encumbrance": [ 9, 9 ] }
     ]
   },
   {
@@ -201,10 +196,11 @@
     "material_thickness": 1,
     "flags": [ "VARSIZE", "SKINTIGHT", "SUPER_FANCY", "OVERSIZE" ],
     "armor": [
+      { "encumbrance": 1, "coverage": 100, "covers": [ "foot_l", "foot_r" ] },
       {
         "encumbrance": 1,
         "coverage": 85,
-        "covers": [ "foot_l", "foot_r", "leg_l", "leg_r" ]
+        "covers": [ "leg_l", "leg_r" ]
       }
     ]
   },
@@ -235,11 +231,9 @@
       }
     ],
     "armor": [
-      {
-        "encumbrance": 12,
-        "coverage": 95,
-        "covers": [ "leg_l", "leg_r", "torso", "arm_l", "arm_r" ]
-      }
+      { "covers": [ "torso" ], "coverage": 95, "encumbrance": [ 12, 15 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 90, "encumbrance": [ 12, 12 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 90, "encumbrance": [ 12, 12 ] }
     ]
   },
   {
@@ -278,11 +272,10 @@
     "flags": [ "VARSIZE", "HOOD", "WATERPROOF", "RAINPROOF", "STURDY", "SUPER_FANCY", "OVERSIZE" ],
     "ammo": [ "assassins_throwing_dagger" ],
     "armor": [
-      {
-        "encumbrance": [ 9, 17 ],
-        "coverage": 100,
-        "covers": [ "leg_l", "leg_r", "head", "torso", "arm_l", "arm_r" ]
-      }
+      { "covers": [ "head" ], "coverage": 80, "encumbrance": [ 8, 8 ] },
+      { "covers": [ "torso" ], "coverage": 100, "encumbrance": [ 10, 20 ] },
+      { "covers": [ "leg_l", "leg_r" ], "coverage": 90, "encumbrance": [ 9, 9 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 90, "encumbrance": [ 9, 9 ] }
     ]
   },
   {
@@ -428,7 +421,7 @@
     "id": "maids_scarf",
     "type": "TOOL_ARMOR",
     "category": "clothing",
-    "name": { "str": "maid's scarf" },
+    "name": { "str": "maid's scarf", "str_pl": "maid's scarves" },
     "description": "A very long light cloth scarf, worn over the mouth for warmth.  With the extra length, it's enough to handle nonstandard facial features and accommodate your hands too.  Use it to loosen it if you get too warm.",
     "weight": "120 g",
     "volume": "1 L",
@@ -441,12 +434,32 @@
     "warmth": 20,
     "environmental_protection": 5,
     "flags": [ "OVERSIZE", "POCKETS", "OUTER", "ALLOWS_NATURAL_ATTACKS" ],
+    "use_action": { "type": "transform", "msg": "You wrap your scarf a bit tighter.", "target": "maids_scarf_loss", "menu_text": "Wrap tighter" },
+    "armor": [
+      {
+        "encumbrance": 2,
+        "coverage": 85,
+        "covers": [ "mouth" ]
+      }
+    ]
+  },
+  {
+    "id": "maids_scarf_loss",
+    "copy-from": "maids_scarf",
+    "type": "TOOL_ARMOR",
+    "category": "clothing",
+    "name": { "str": "maid's scarf (loose)", "str_pl": "maid's scarves (loose)" },
+    "description": "A very long light cloth scarf, worn over the mouth for warmth.  With the extra length, it's enough to handle nonstandard facial features and accommodate your hands too.  Use it to wear it tighter if you get too cold.",
+    "warmth": 8,
+    "environmental_protection": 2,
+    "use_action": { "type": "transform", "msg": "You wrap your scarf a bit tighter.", "target": "maids_scarf", "menu_text": "Wrap tighter" },
     "armor": [
       {
         "encumbrance": 1,
-        "coverage": 100,
+        "coverage": 45,
         "covers": [ "mouth" ]
       }
     ]
   }
+
 ]
