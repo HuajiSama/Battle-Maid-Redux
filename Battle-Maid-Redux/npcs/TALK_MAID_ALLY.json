@@ -23,11 +23,6 @@
       { "text": "There's something I want you to do.", "topic": "TALK_MAID_ORDERS" },
       { "text": "I just wanted to talk for a bit.", "topic": "TALK_MAID_SOCIAL" },
       {
-        "text": "I want you to use this item.",
-        "topic": "TALK_MAID_ALLY",
-        "effect": "npc_gets_item_to_use"
-      },
-      {
         "text": "It's time for your milking.",
         "topic": "TALK_MAID_MILK",
         "condition": { "and": [ { "npc_has_trait": "BOUNTIFUL" }, { "not": { "npc_has_effect": "maid_milked" } } ] }
@@ -181,11 +176,32 @@
       },
       {
         "text": "Let's trade items.",
-        "condition": { "not": { "or": [ "is_by_radio", { "npc_has_trait": "MAID_RESTRICT" } ] } },
+        "condition": {
+          "not": "is_by_radio",
+          "npc_has_trait": "MAID_RESTRICT"
+        },
         "topic": "TALK_MAID_ALLY",
         "effect": "start_trade",
         "switch": true,
         "default": true
+      },
+      {
+        "text": "I want you to use this item.",
+        "condition": {
+          "not": "is_by_radio",
+          "npc_has_trait": "MAID_RESTRICT"
+        },
+        "topic": "TALK_MAID_ALLY",
+        "effect": "npc_gets_item_to_use"
+      },
+      {
+        "text": "Hold on to this item.",
+        "condition": {
+          "not": "is_by_radio",
+          "npc_has_trait": "MAID_RESTRICT"
+        },
+        "topic": "TALK_MAID_ALLY",
+        "effect": "npc_gets_item"
       },
       {
         "text": "Let's trade items",
@@ -193,18 +209,6 @@
         "condition": { "npc_has_trait": "HALLUCINATION" },
         "switch": true,
         "default": false
-      },
-      {
-        "text": "I want you to use this item.",
-        "condition": { "not": { "or": [ "is_by_radio", { "npc_has_trait": "MAID_RESTRICT" } ] } },
-        "topic": "TALK_MAID_ALLY",
-        "effect": "npc_gets_item_to_use"
-      },
-      {
-        "text": "Hold on to this item.",
-        "condition": { "not": { "or": [ "is_by_radio", { "npc_has_trait": "MAID_RESTRICT" } ] } },
-        "topic": "TALK_MAID_ALLY",
-        "effect": "npc_gets_item"
       },
       {
         "text": "Guard this position.",
