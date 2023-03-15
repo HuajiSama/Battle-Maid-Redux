@@ -64,7 +64,7 @@
     "symbol": "m",
     "color": "brown",
     "ammo": [ "battery" ],
-    "charges_per_use": 10,
+    "charges_per_use": 25,
     "chat_topics": [ "TALK_VIBE1" ],
     "use_action": [
       {

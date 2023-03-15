@@ -41,14 +41,14 @@
   {
     "id": "TALK_VIBE2",
     "type": "talk_topic",
-    "condition": { "u_has_item": "master_doll_vibe", "charges": 10 },
+    "condition": { "u_has_item": "master_doll_vibe", "charges": 25 },
     "dynamic_line": "You reach the climax and feel filled with a roaring energy!",
     "responses": [
       { 
         "text": "♂♀",
         "topic": "TALK_VIBE2",
         "effect": [
-          { "u_consume_item": "master_doll_vibe", "charges": 10 },
+          { "u_consume_item": "master_doll_vibe", "charges": 25 },
           { "u_spawn_item": "maid_point", "count": 1 }
         ]
       },
