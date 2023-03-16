@@ -282,7 +282,7 @@
     "type": "talk_topic",
     "dynamic_line": "With my life, master!",
     "responses": [
-      { "text": "I need you to come with me.", "topic": "TALK_MAID_ALLY", "effect": "stop_guard" },
+      { "text": "I need you to come with me.", "topic": "TALK_MAID_ALLY", "effect": "follow_only" },
       { "text": "See you around.", "topic": "TALK_DONE" }
     ]
   },
