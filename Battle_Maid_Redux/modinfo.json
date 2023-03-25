@@ -4,7 +4,7 @@
     "id": "battle_maid",
     "name": "Battle Maid Redux",
     "authors": [ "Vermilion" ],
-    "maintainers": [ "Conference_Calls" ],
+    "maintainers": [ "Conference_Calls", "滑稽sama" ],
     "description": "Translated and tweaked version of the original Battle Maid mod, newly revamped. See README.md for details",
     "category": "content",
     "dependencies": [ "dda" ]
