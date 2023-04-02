@@ -1,0 +1,69 @@
+[
+  {
+    "id": "master_doll_vibe_off",
+    "type": "TOOL",
+    "category": "other",
+    "name": { "str": "master doll (vibrator) (off)" },
+    "description": "This is a doll in the shape of your beloved master, but with an additional 'special attachment.' By using it in a certain (rather embarassing) type of private ritual, you can release an explosion of desire towards your beloved master and transform it into a usable type of energy.",
+    "weight": "400 g",
+    "volume": "750 ml",
+    "price": "54 USD",
+    "material": [ "cotton", "plastic" ],
+    "symbol": "m",
+    "color": "brown",
+    "ammo": [ "battery" ],
+    "charges_per_use": 10,
+    "use_action": [
+      {
+        "type": "transform",
+        "msg": "You can no longer suppress your feelings and began to intimately press against your master's doll...",
+        "target": "master_doll_vibe_on",
+        "need_charges": 0,
+        "ammo_scale": 0
+      }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "BATTERY_LIGHT", "BATTERY_ULTRA_LIGHT" ],
+        "default_magazine": "light_battery_cell"
+      }
+    ]
+  },
+  {
+    "id": "master_doll_vibe_on",
+    "type": "TOOL",
+    "category": "other",
+    "name": { "str": "master doll (vibrator) (on)" },
+    "description": "This is a doll in the shape of your beloved master, but with an additional 'special attachment.' By using it in a certain (rather embarassing) type of private ritual, you can release an explosion of desire towards your beloved master and transform it into a usable type of energy.",
+    "weight": "400 g",
+    "volume": "750 ml",
+    "price": "54 USD",
+    "material": [ "cotton", "plastic" ],
+    "symbol": "m",
+    "color": "brown",
+    "ammo": [ "battery" ],
+    "charges_per_use": 10,
+    "revert_to": "master_doll_vibe_off",
+    "use_action": [
+      {
+        "type": "transform",
+        "menu_text": "Turn off",
+        "msg": "Finally, after your body tightens up and you reach your limit, you collapse on the doll with a delighted and exhausted smile...",
+        "target": "master_doll_vibe_off",
+        "need_charges": 0,
+        "ammo_scale": 0
+      },
+      { "type": "cast_spell", "spell_id": "bmd_pleasure", "no_fail": true, "level": 1, "need_wielding": true }
+    ],
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "rigid": true,
+        "flag_restriction": [ "BATTERY_LIGHT", "BATTERY_ULTRA_LIGHT" ],
+        "default_magazine": "light_battery_cell"
+      }
+    ]
+  }
+]

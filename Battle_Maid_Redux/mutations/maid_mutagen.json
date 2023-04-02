@@ -1,0 +1,104 @@
+[
+  {
+    "id": "mutagen_shoggothblood",
+    "copy-from": "mutagen",
+    "type": "COMESTIBLE",
+    "name": { "str": "Shoggoth Blood" },
+    "description": "This is blood taken from Shoggoth. The blood itself is wriggling at a slow rate, even though it hasn't been touched by anything. If you intend to use it, you will need a syringe...",
+    "looks_like": "mutagen",
+    "color": "light_green",
+    "addiction_potential": 0,
+    "weight": "50 g",
+    "fun": -10,
+    "container": "flask_glass",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the Shoggoth Blood.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_shoggoth", 60 ] ]
+    }
+  },
+  {
+    "id": "mutagen_shoggoth",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "shoggoth mutagen" },
+    "description": "shoggoth mutagen.",
+    "color": "light_green",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the shoggoth mutagen.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_shoggoth", 225 ], [ "mutagen", 125 ] ]
+    }
+  },
+  {
+    "id": "mutagen_milk",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "milk maid mutagen" },
+    "description": "Milk maid mutagen",
+    "color": "light_green",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the Milk maid mutagen.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_milk", 225 ], [ "mutagen", 125 ] ]
+    }
+  },
+  {
+    "id": "mutagen_maid",
+    "copy-from": "mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "Potion of Maid Awakening" },
+    "description": "It is a liquid obtained by altering Maid Point. When ingested, it can trigger a mutation that awakens the primordial spirit of service that has long been a part of humanity.",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the Potion of Maid Awakening.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_maid", 225 ], [ "mutagen", 125 ] ]
+    }
+  },
+  {
+    "id": "iv_mutagen_shoggoth",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "shoggoth mutagenic primer" },
+    "description": "Shoggoth mutagenic primer.",
+    "looks_like": "iv_mutagen",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the shoggoth mutagenic primer.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_shoggoth", 450, 550 ] ]
+    }
+  },
+  {
+    "id": "iv_mutagen_milk",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "milk maid mutagenic primer" },
+    "description": "Milk maid mutagenic primer.",
+    "looks_like": "iv_mutagen",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the milk maid mutagenic primer.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_milk", 450, 550 ] ]
+    }
+  },
+  {
+    "id": "iv_mutagen_maid",
+    "copy-from": "iv_mutagen_flavor",
+    "type": "COMESTIBLE",
+    "name": { "str": "maid mutagenic primer" },
+    "description": "Maid mutagenic primer.",
+    "looks_like": "iv_mutagen",
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You inject the maid mutagenic primer.",
+      "tools_needed": { "syringe": -1 },
+      "vitamins": [ [ "mutagen_maid", 450, 550 ] ]
+    }
+  }
+]
