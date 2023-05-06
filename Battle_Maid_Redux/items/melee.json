@@ -188,10 +188,10 @@
     "material": [ "aluminum", "plastic", "steel" ],
     "symbol": "/",
     "color": "dark_gray",
-    "melee_damage": { "bash": 6, "cut": 22 },
+    "melee_damage": { "bash": 6, "stab": 22 },
     "to_hit": 1,
     "techniques": [ "RAPID", "WBLOCK_1" ],
-    "flags": [ "DURABLE_MELEE", "RAIN_PROTECT", "STAB" ],
+    "flags": [ "DURABLE_MELEE", "RAIN_PROTECT" ],
     "use_action": { "type": "transform", "target": "shikomi_kasa", "msg": "You retract the umbrella's blade back into its hiding spot." }
   },
   {

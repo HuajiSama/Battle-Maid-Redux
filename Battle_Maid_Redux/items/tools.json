@@ -37,8 +37,8 @@
     ],
     "use_action": [
       {
-        "type": "cast_spell", "spell_id": "master_doll_spell",
-        "msg": "You use master doll.",
+        "type": "cast_spell",
+        "spell_id": "master_doll_spell",
         "no_fail": true,
         "level": 1
       }

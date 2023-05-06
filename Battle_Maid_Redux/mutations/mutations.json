@@ -90,7 +90,7 @@
     ],
     "movecost_modifier": 0.8,
     "healing_awake": 1.0,
-    "healing_resting": 0.75,
+    "healing_multiplier": 0.75,
     "mending_modifier": 32.0
   },
   {
@@ -114,7 +114,7 @@
     ],
     "movecost_modifier": 0.8,
     "healing_awake": 3.0,
-    "healing_resting": 2.25,
+    "healing_multiplier": 2.25,
     "mending_modifier": 100.0
   },
   {
@@ -380,7 +380,7 @@
       }
     ],
     "healing_awake": 4.45,
-    "healing_resting": 4.45
+    "healing_multiplier": 4.45
   },
   {
     "type": "mutation",

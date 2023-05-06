@@ -5,7 +5,7 @@
     "effect": "effect_on_condition",
     "effect_str": "master_doll_eoc",
     "name": "master doll",
-    "description": "测试",
+    "description": "TEST",
     "shape": "blast",
     "valid_targets": [ "self" ]
   },
@@ -21,7 +21,7 @@
     "effect": "effect_on_condition",
     "effect_str": "master_doll_vibe_eoc",
     "name": "Test Effect Name",
-    "description": "测试",
+    "description": "TEST",
     "shape": "blast",
     "eocs": [ "EOC_SHILLS_BRANCH" ],
     "chat_topics": [ "TALK_VIBE1" ],
