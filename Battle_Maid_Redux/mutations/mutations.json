@@ -246,16 +246,6 @@
   },
   {
     "type": "mutation",
-    "id": "STYLISH",
-    "name": { "str": "Stylish" },
-    "points": 1,
-    "description": "Practicality is far less important than style.  Your morale is improved by wearing fashionable and attractive clothing.",
-    "starting_trait": true,
-    "valid": false,
-    "extend": { "category": [ "MAID" ] }
-  },
-  {
-    "type": "mutation",
     "id": "MAID_ANKI",
     "name": { "str": "Hidden Weapon" },
     "points": 6,
@@ -440,19 +430,49 @@
     "type": "mutation",
     "id": "PER_SLIME",
     "copy-from": "PER_SLIME",
-    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "PER_SLIME_OK",
     "copy-from": "PER_SLIME_OK",
-    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "STYLISH",
+    "copy-from": "STYLISH",
+    "extend": { "category": [ "MAID" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "SLIMY",
+    "copy-from": "SLIMY",
+    "extend": { "category": [ "SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "VISCOUS",
+    "copy-from": "VISCOUS",
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BENDY1",
+    "copy-from": "BENDY1",
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
+  },
+  {
+    "type": "mutation",
+    "id": "BENDY2",
+    "copy-from": "BENDY2",
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
     "id": "AMORPHOUS",
     "copy-from": "AMORPHOUS",
-    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
@@ -476,7 +496,7 @@
     "type": "mutation",
     "id": "EATHEALTH",
     "copy-from": "EATHEALTH",
-    "extend": [ { "category": [ "SHOGGOTH" ] }, { "threshreq": [ "THRESH_SHOGGOTH" ] } ]
+    "extend": { "category": [ "SHOGGOTH" ], "threshreq": [ "THRESH_SHOGGOTH" ] }
   },
   {
     "type": "mutation",
@@ -542,7 +562,6 @@
     "type": "mutation",
     "id": "ANIMALDISCORD",
     "copy-from": "ANIMALDISCORD",
-    "cancels": [ "ANIMALEMPATH" ],
     "extend": { "category": [ "MAID" ] }
   },
   {
